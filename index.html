@@ -3,95 +3,122 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!---google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <!--my css-->
+    <link rel="stylesheet" href="style.css" />
     <title>Interactive Quiz</title>
   </head>
   <body>
-    <!--title-->
-    <h1>Welcome to the Fallout Quiz</h1>
-    <p>Test your knowledge about <b>Fallout 3</b></p>
-    <!--form-->
-    <form>
-      <h2>1. What year does the main story of Fallout 3 begin?</h2>
-      <label><input type="radio" name="q1" value="a" />A) 2255</label><br />
-      <label><input type="radio" name="q1" value="b" />B) 2266</label><br />
-      <label><input type="radio" name="q1" value="c" />C) 2277</label><br />
-      <label><input type="radio" name="q1" value="d" />D) 2288</label><br />
+    <!--container-->
+    <div class="container">
+      <!--title-->
+      <h1>Welcome to the Fallout Quiz</h1>
+      <p>
+        Test your knowledge about <i><b>Fallout 3</b></i>
+      </p>
+      <br />
+      <!--form-->
+      <form>
+        <h2>1. What year does the main story of Fallout 3 begin?</h2>
+        <label><input type="radio" name="q1" value="a" />A) 2255</label><br />
+        <label><input type="radio" name="q1" value="b" />B) 2266</label><br />
+        <label><input type="radio" name="q1" value="c" />C) 2277</label><br />
+        <label><input type="radio" name="q1" value="d" />D) 2288</label><br />
 
-      <h2>2. What is the name of the main character’s father?</h2>
-      <label><input type="radio" name="q2" value="a" />A) Jack</label><br />
-      <label><input type="radio" name="q2" value="b" />B) James</label><br />
-      <label><input type="radio" name="q2" value="c" />C) Johnny</label><br />
-      <label><input type="radio" name="q2" value="d" />D) Joe</label><br />
+        <h2>2. What is the name of the main character’s father?</h2>
+        <label><input type="radio" name="q2" value="a" />A) Jack</label><br />
+        <label><input type="radio" name="q2" value="b" />B) James</label><br />
+        <label><input type="radio" name="q2" value="c" />C) Johnny</label><br />
+        <label><input type="radio" name="q2" value="d" />D) Joe</label><br />
 
-      <h2>
-        3. Which party does the Lone Wanderer encounter that uses and power
-        armor?
-      </h2>
-      <label
-        ><input type="radio" name="q3" value="a" />A) The Brotherhood of
-        Steel</label
-      ><br />
-      <label
-        ><input type="radio" name="q3" value="b" />B) The Sisterhood of
-        Iron</label
-      ><br />
-      <label
-        ><input type="radio" name="q3" value="c" />C) The Motherhood of
-        Copper</label
-      ><br />
-      <label
-        ><input type="radio" name="q3" value="d" />D) The Childhood of
-        Rubber</label
-      ><br />
+        <h2>
+          3. Which party does the Lone Wanderer encounter that uses and power
+          armor?
+        </h2>
+        <label
+          ><input type="radio" name="q3" value="a" />A) The Brotherhood of
+          Steel</label
+        ><br />
+        <label
+          ><input type="radio" name="q3" value="b" />B) The Sisterhood of
+          Iron</label
+        ><br />
+        <label
+          ><input type="radio" name="q3" value="c" />C) The Motherhood of
+          Copper</label
+        ><br />
+        <label
+          ><input type="radio" name="q3" value="d" />D) The Childhood of
+          Rubber</label
+        ><br />
 
-      <h2>4. What is the name of the massive robot?</h2>
-      <label><input type="radio" name="q4" value="a" />A) Liberty Prime</label
-      ><br />
-      <label
-        ><input type="radio" name="q4" value="b" />B) Independence Prime</label
-      ><br />
-      <label><input type="radio" name="q4" value="c" />C) Privilege Prime</label
-      ><br />
-      <label><input type="radio" name="q4" value="d" />D) Freedom Prime</label
-      ><br />
+        <h2>4. What is the name of the massive robot?</h2>
+        <label><input type="radio" name="q4" value="a" />A) Liberty Prime</label
+        ><br />
+        <label
+          ><input type="radio" name="q4" value="b" />B) Independence
+          Prime</label
+        ><br />
+        <label
+          ><input type="radio" name="q4" value="c" />C) Privilege Prime</label
+        ><br />
+        <label><input type="radio" name="q4" value="d" />D) Freedom Prime</label
+        ><br />
 
-      <h2>5. What is the name of the dog the Lone Wanderer befriended?</h2>
-      <label><input type="radio" name="q5" value="a" />A) Dogmeat</label><br />
-      <label><input type="radio" name="q5" value="b" />B) Muttjaw</label><br />
-      <label><input type="radio" name="q5" value="c" />C) Boy</label><br />
-      <label><input type="radio" name="q5" value="d" />D) Rusty</label><br />
+        <h2>5. What is the name of the dog the Lone Wanderer befriended?</h2>
+        <label><input type="radio" name="q5" value="a" />A) Dogmeat</label
+        ><br />
+        <label><input type="radio" name="q5" value="b" />B) Muttjaw</label
+        ><br />
+        <label><input type="radio" name="q5" value="c" />C) Boy</label><br />
+        <label><input type="radio" name="q5" value="d" />D) Rusty</label><br />
 
-      <h2>6. Who is the leader of the Republic of Dave?</h2>
-      <label><input type="radio" name="q6" value="a" />A) Mad Bunny</label><br />
-      <label><input type="radio" name="q6" value="b" />B) Chen Yi</label><br />
-      <label><input type="radio" name="q6" value="c" />C) Kuo Yu</label><br />
-      <label><input type="radio" name="q6" value="d" />D) Dave</label><br />
+        <h2>6. Who is the leader of the Republic of Dave?</h2>
+        <label><input type="radio" name="q6" value="a" />A) Mad Bunny</label
+        ><br />
+        <label><input type="radio" name="q6" value="b" />B) Chen Yi</label
+        ><br />
+        <label><input type="radio" name="q6" value="c" />C) Kuo Yu</label><br />
+        <label><input type="radio" name="q6" value="d" />D) Dave</label><br />
 
-      <h2>7. What is the name of the Vault player grow up in?</h2>
-      <label><input type="radio" name="q7" value="a" />A) Vault 101</label
-      ><br />
-      <label><input type="radio" name="q7" value="b" />B) Vault 102</label
-      ><br />
-      <label><input type="radio" name="q7" value="c" />C) Vault 103</label
-      ><br />
-      <label><input type="radio" name="q7" value="d" />D) Vault 104</label
-      ><br />
+        <h2>7. What is the name of the Vault player grow up in?</h2>
+        <label><input type="radio" name="q7" value="a" />A) Vault 101</label
+        ><br />
+        <label><input type="radio" name="q7" value="b" />B) Vault 102</label
+        ><br />
+        <label><input type="radio" name="q7" value="c" />C) Vault 103</label
+        ><br />
+        <label><input type="radio" name="q7" value="d" />D) Vault 104</label
+        ><br />
 
-      <h2>
-        8. Who is, indisputably, the most important person in a Vault, he who
-        shelters us from the harshness of the atomic Wasteland, and we owe
-        everything we have, including our lives?
-      </h2>
-      <label><input type="radio" name="q8" value="a" />A) The Overseer</label
-      ><br />
-      <label><input type="radio" name="q8" value="a" />B) The Overseer</label
-      ><br />
-      <label><input type="radio" name="q8" value="a" />C) The Overseer</label
-      ><br />
-      <label><input type="radio" name="q8" value="a" />D) The Overseer</label
-      ><br />
-      <!--submmit-->
-      <button type="submit">Submit Quiz</button>
-    </form>
+        <h2>
+          8. Who is, indisputably, the most important person in a Vault, he who
+          shelters us from the harshness of the atomic Wasteland, and we owe
+          everything we have, including our lives?
+        </h2>
+        <label><input type="radio" name="q8" value="a" />A) The Overseer</label
+        ><br />
+        <label><input type="radio" name="q8" value="a" />B) The Overseer</label
+        ><br />
+        <label><input type="radio" name="q8" value="a" />C) The Overseer</label
+        ><br />
+        <label><input type="radio" name="q8" value="a" />D) The Overseer</label
+        ><br />
+        <!--submmit-->
+        <button type="submit" id="submit-button">Submit Quiz</button>
+      </form>
+    </div>
+    <footer>
+      <p>
+        © 2077 Vault-Tec Corporation. "Building a Better Future underground."
+        All rights reserved.
+      </p>
+    </footer>
   </body>
 </html>
