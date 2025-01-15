@@ -1,6 +1,6 @@
 :root {
   --background-color: rgb(1, 22, 1);
-  --background-color-hl: rgb(1, 32, 1);
+  --background-color-hl: rgb(1, 45, 1);
   --text-color: green;
 }
 
@@ -9,8 +9,19 @@
 }
 
 body {
-  background-color: var(--background-color);
   font-family: 'Share Tech Mono', serif;
+  background-color: var(--background-color);
+}
+body::after {
+  position: fixed;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/images/background.png');
+  opacity: 0.1;
+  z-index: -100;
 }
 
 .container {
@@ -19,9 +30,22 @@ body {
   border: 2px solid var(--text-color);
 }
 
-h1 {
-  margin-top: 50px;
-  text-align: center;
+.title-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.vault-boy {
+  height: 70px;
+}
+
+.intro {
+  max-width: 600px;
+  margin: 0px auto;
+  text-align: left;
 }
 
 h2 {
@@ -44,6 +68,7 @@ p {
 
 .question-div:hover {
   background-color: var(--background-color-hl);
+  box-shadow: var(--background-color-hl) 0 0 40px 10px;
 }
 
 .question-div::before {
