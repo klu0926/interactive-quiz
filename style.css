@@ -1,6 +1,7 @@
 :root {
   --background-color: rgb(1, 22, 1);
   --background-color-hl: rgb(1, 45, 1);
+  --notice-background-color: rgb(1, 22, 1);
   --text-color: green;
 }
 
@@ -144,6 +145,54 @@ footer {
   padding: 20px;
   font-size: 0.85rem;
   text-align: center;
+}
+
+.notice-fill {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.notice {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 250px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--background-color);
+  border: 2px solid var(--text-color);
+  padding: 20px;
+}
+
+.notice button {
+  display: block;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 10px 20px;
+  border: 3px solid var(--text-color);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-family: 'Share Tech Mono', serif;
+}
+
+.notice button:hover {
+  background-color: var(--text-color);
+  color: var(--background-color);
+  transform: scale(0.95);
+  transition: all ease-in-out 0.2s;
+}
+
+.hidden {
+  display: none;
 }
 
 @keyframes question-div-border-top {
